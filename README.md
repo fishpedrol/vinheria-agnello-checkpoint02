@@ -2,7 +2,7 @@
 
 ## 📌 Descrição
 
-Sistema de Avaliação de Estoque e Tendência de Vinhos desenvolvido com HTML, CSS e JavaScript.  
+Sistema de Avaliação de Estoque e Tendência de Vinhos desenvolvido com HTML, CSS e JavaScript.
 O sistema permite o cadastro de vários vinhos em sequência via `prompt()` e `alert()`, utilizando funções reutilizáveis para validação de entradas, verificação de estoque baixo, classificação de vinhos por safra e exibição de um resumo final com estatísticas.
 
 ---
@@ -19,8 +19,8 @@ O sistema permite o cadastro de vários vinhos em sequência via `prompt()` e `a
 
 ## 🌐 GitHub Pages
 
-Acesse o projeto online:  
-👉 [https://fishpedrol.github.io/vinharia-agnello/](https://fishpedrol.github.io/vinharia-agnello/)
+Acesse o projeto online:
+👉 [https://fishpedrol.github.io/vinheria-agnello-checkpoint02/)
 
 ---
 
