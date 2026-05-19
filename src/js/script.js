@@ -72,8 +72,16 @@ function classificarVinho(safra) {
     }
 }
 
-
 function exibirNoConsole(titulo, conteudo) {
     alert(`A seguir, veja ${titulo} no console.`);
     console.log(conteudo);
+}
+
+function formatarVinho(numero, nomeV, tipoV, safraV, estoqueV, classeV) {
+    let texto = `\n🍇 ${numero} - ${nomeV}`;
+    texto += `\n   Tipo: ${tipoV} | Safra: ${safraV} | Estoque: ${estoqueV}`;
+    if (verificarEstoqueBaixo(estoqueV)) texto += " ⚠️ ESTOQUE BAIXO!";
+    texto += `\n   Classificacao: ${classeV}`;
+    texto += "\n----------------------------------";
+    return texto;
 }
