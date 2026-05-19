@@ -44,3 +44,14 @@ function validarSafra(mensagem) {
         return valor;
     }
 }
+
+function validarTipo(mensagem) {
+    while (true) {
+        let valor = validarTexto(mensagem);
+        let valorLower = valor.toLowerCase();
+        if (valorLower === "tinto" || valorLower === "branco" || valorLower === "rose" || valorLower === "rosé") {
+            return valor.charAt(0).toUpperCase() + valor.slice(1).toLowerCase();
+        }
+        alert("❌ Tipo invalido! Escolha entre: Tinto, Branco ou Rose.");
+    }
+}
