@@ -14,3 +14,20 @@ function validarTexto(mensagem) {
         return valor;
     }
 }
+
+function validarNumero(mensagem) {
+    let valor;
+    while (true) {
+        let entrada = prompt(mensagem);
+        if (entrada === null) {
+            alert(":x: Entrada cancelada. Tente novamente.");
+            continue;
+        }
+        valor = Number(entrada);
+        if (isNaN(valor) || valor < 0 || !Number.isInteger(valor)) {
+            alert(":x: Digite um numero inteiro valido (zero ou positivo).");
+            continue;
+        }
+        return valor;
+    }
+}
