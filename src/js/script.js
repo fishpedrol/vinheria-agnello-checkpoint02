@@ -55,3 +55,19 @@ function validarTipo(mensagem) {
         alert("❌ Tipo invalido! Escolha entre: Tinto, Branco ou Rose.");
     }
 }
+
+function verificarEstoqueBaixo(quantidade) {
+    return quantidade < 5;
+}
+
+function classificarVinho(safra) {
+    let anoAtual = new Date().getFullYear();
+    let idade = anoAtual - safra;
+    if (idade <= 5) {
+        return "Jovem";
+    } else if (idade <= 15) {
+        return "Amadurecido";
+    } else {
+        return "Antigo";
+    }
+}
