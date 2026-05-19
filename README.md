@@ -1,7 +1,9 @@
-# 🍷 Vinícola FIAP
+# 🍷 Vinheria Agnello - Checkpoint 02
 
 ## 📌 Descrição
-Sistema básico para cadastro de usuários e simulação de compra de vinhos, desenvolvido com HTML, CSS e JavaScript.  
+
+Sistema de Avaliação de Estoque e Tendência de Vinhos desenvolvido com HTML, CSS e JavaScript.  
+O sistema permite o cadastro de vários vinhos em sequência via `prompt()` e `alert()`, utilizando funções reutilizáveis para validação de entradas, verificação de estoque baixo, classificação de vinhos por safra e exibição de um resumo final com estatísticas.
 
 ---
 
@@ -18,7 +20,7 @@ Sistema básico para cadastro de usuários e simulação de compra de vinhos, de
 ## 🌐 GitHub Pages
 
 Acesse o projeto online:  
-👉 [https://github.com/fishpedrol/project-facul.git](https://fishpedrol.github.io/vinharia-agnello/)
+👉 [https://fishpedrol.github.io/vinharia-agnello/](https://fishpedrol.github.io/vinharia-agnello/)
 
 ---
 
@@ -27,3 +29,14 @@ Acesse o projeto online:
 - HTML5
 - CSS3
 - JavaScript
+
+---
+
+## 📋 Funcionalidades do Checkpoint 02
+
+- Cadastro de varios vinhos em sequencia (sem arrays/objetos)
+- Validacao de entradas (texto e numeros) com funcoes reutilizaveis
+- Verificacao de estoque baixo (menos de 5 unidades)
+- Classificacao do vinho: Jovem, Amadurecido ou Antigo
+- Exibicao de dados no console e via alert
+- Resumo final: total de cadastros, vinhos com estoque baixo e safra mais antiga
