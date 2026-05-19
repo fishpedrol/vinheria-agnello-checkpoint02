@@ -31,3 +31,16 @@ function validarNumero(mensagem) {
         return valor;
     }
 }
+
+function validarSafra(mensagem) {
+    let anoAtual = new Date().getFullYear();
+    let valor;
+    while (true) {
+        valor = validarNumero(mensagem);
+        if (valor < 1900 || valor > anoAtual) {
+            alert(`❌ Ano de safra invalido! Digite um ano entre 1900 e ${anoAtual}.`);
+            continue;
+        }
+        return valor;
+    }
+}
