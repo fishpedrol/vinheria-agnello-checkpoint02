@@ -71,3 +71,9 @@ function classificarVinho(safra) {
         return "Antigo";
     }
 }
+
+
+function exibirNoConsole(titulo, conteudo) {
+    alert(`A seguir, veja ${titulo} no console.`);
+    console.log(conteudo);
+}
