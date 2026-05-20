@@ -1,5 +1,4 @@
-// --- TRECHO 1: Função de validação de texto ---
-// "feat: adiciona funcao auxiliar para validacao de entradas de texto"
+
 function validarTexto(mensagem) {
     let valor = "";
     while (true) {
@@ -17,8 +16,7 @@ function validarTexto(mensagem) {
     }
 }
 
-// --- TRECHO 2: Função de validação de números inteiros positivos ---
-// "feat: implementa validacao para numeros inteiros e positivos"
+// -
 function validarNumero(mensagem) {
     let valor;
     while (true) {
@@ -36,8 +34,7 @@ function validarNumero(mensagem) {
     }
 }
 
-// --- TRECHO 3: Função de validação do ano da safra (1900 até ano atual) ---
-// "feat: cria funcao de validacao especifica para ano de safra"
+
 function validarSafra(mensagem) {
     let anoAtual = new Date().getFullYear();
     let valor;
@@ -51,8 +48,7 @@ function validarSafra(mensagem) {
     }
 }
 
-// --- TRECHO 4: Função de validação do tipo de vinho (Tinto, Branco ou Rosé) ---
-// "feat: adiciona validacao restritiva para tipos de vinho permitidos"
+
 function validarTipo(mensagem) {
     while (true) {
         let valor = validarTexto(mensagem);
@@ -64,8 +60,7 @@ function validarTipo(mensagem) {
     }
 }
 
-// --- TRECHO 5: Funções de negócio (Estoque e Classificação de Idade) ---
-// "feat: implementa logica de negocio para estoque baixo e classificacao por idade"
+
 function verificarEstoqueBaixo(quantidade) {
     return quantidade < 5;
 }
@@ -82,8 +77,7 @@ function classificarVinho(safra) {
     }
 }
 
-// --- TRECHO 6: Funções auxiliares de exibição e formatação ---
-// "feat: adiciona helpers para formatacao de vinhos e exibicao no console"
+
 function exibirNoConsole(titulo, conteudo) {
     alert(`A seguir, veja ${titulo} no console.`);
     console.log(conteudo);
@@ -98,8 +92,7 @@ function formatarVinho(numero, nomeV, tipoV, safraV, estoqueV, classeV) {
     return texto;
 }
 
-// --- TRECHO 7: Início da função principal e Cadastro do Usuário ---
-// "feat: inicializa sistema principal com fluxo de cadastro de usuario"
+
 function initsys() {
     alert("Bem-vindo a Vinheria Agnello!");
 
@@ -122,8 +115,7 @@ function initsys() {
 
     alert("A seguir, adicione os vinhos ao cardapio de vinhos.");
 
-    // --- TRECHO 8: Preparação de variáveis para o cadastro de Vinhos (Sem Arrays) ---
-    // "chore: inicializa variaveis estaticas e contadores para o limite de cadastros"
+
     let nome1 = "", tipo1 = "", safra1 = 0, estoque1 = 0, classe1 = "";
     let nome2 = "", tipo2 = "", safra2 = 0, estoque2 = 0, classe2 = "";
     let nome3 = "", tipo3 = "", safra3 = 0, estoque3 = 0, classe3 = "";
@@ -142,8 +134,7 @@ function initsys() {
             break;
         }
 
-        // --- TRECHO 9: Coleta de Dados do Vinho e Cálculos Locais ---
-        // "feat: implementa interacao com usuario para coleta e calculo de metricas do vinho"
+
         let nomeTemp = validarTexto("Digite o nome do vinho:");
         let tipoTemp = validarTipo("Digite o tipo do vinho (Tinto, Branco ou Rose):");
         let safraTemp = validarSafra("Digite o ano da safra:");
@@ -162,8 +153,7 @@ function initsys() {
             nomeSafraMaisAntiga = nomeTemp;
         }
 
-        // --- TRECHO 10: Armazenamento Condicional (Hardcoded) e Continuidade ---
-        // "feat: estrutura armazenamento sequencial de dados em variaveis locais"
+
         if (totalCadastros === 1) {
             nome1 = nomeTemp;
             tipo1 = tipoTemp;
@@ -207,8 +197,7 @@ function initsys() {
         }
     }
 
-    // --- TRECHO 11: Fechamento, Exibição do Cardápio e Resumo Final ---
-    // "feat: finaliza execucao com exibicao formatada do cardapio e resumo estatistico"
+
     if (totalCadastros > 0) {
 
         let cardapio = "🍷 ===== CARDAPIO DE VINHOS ===== 🍷\n";
