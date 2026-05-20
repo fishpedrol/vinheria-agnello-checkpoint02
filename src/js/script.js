@@ -130,3 +130,56 @@ let nomeTemp = validarTexto("Digite o nome do vinho:");
         let classeTemp = classificarVinho(safraTemp);
 
         totalCadastros++;
+
+          if (verificarEstoqueBaixo(estoqueTemp)) {
+            totalEstoqueBaixo++;
+        }
+
+        if (safraMaisAntiga === 0 || safraTemp < safraMaisAntiga) {
+            safraMaisAntiga = safraTemp;
+            nomeSafraMaisAntiga = nomeTemp;
+        }
+
+  if (totalCadastros === 1) {
+            nome1 = nomeTemp;
+            tipo1 = tipoTemp;
+            safra1 = safraTemp;
+            estoque1 = estoqueTemp;
+            classe1 = classeTemp;
+        } else if (totalCadastros === 2) {
+            nome2 = nomeTemp;
+            tipo2 = tipoTemp;
+            safra2 = safraTemp;
+            estoque2 = estoqueTemp;
+            classe2 = classeTemp;
+        } else if (totalCadastros === 3) {
+            nome3 = nomeTemp;
+            tipo3 = tipoTemp;
+            safra3 = safraTemp;
+            estoque3 = estoqueTemp;
+            classe3 = classeTemp;
+        } else if (totalCadastros === 4 ) {
+            nome4 = nomeTemp;
+            tipo4 = tipoTemp;
+            safra4 = safraTemp;
+            estoque4 = estoqueTemp;
+            classe4 = classeTemp;
+        } else if (totalCadastros === 5) {
+            nome5 = nomeTemp;
+            tipo5 = tipoTemp;
+            safra5 = safraTemp;
+            estoque5 = estoqueTemp;
+            classe5 = classeTemp;
+        }
+
+        let avisoEstoque = verificarEstoqueBaixo(estoqueTemp) ? " ⚠️ ESTOQUE BAIXO!" : "";
+        alert(`✅ Vinho "${nomeTemp}" cadastrado!${avisoEstoque}`);
+
+        if (totalCadastros < 5) {
+            let resposta = prompt("Deseja cadastrar outro vinho? (s/n)");
+            if (resposta === null || resposta.trim().toLowerCase() !== "s") {
+                continuar = false;
+            }
+        }
+    }
+
