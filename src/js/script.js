@@ -122,3 +122,11 @@ let nome1 = "", tipo1 = "", safra1 = 0, estoque1 = 0, classe1 = "";
         if (totalCadastros >= 5) {
             alert("⚠️ Limite de 5 vinhos cadastrados atingido!");
             break;
+let nomeTemp = validarTexto("Digite o nome do vinho:");
+        let tipoTemp = validarTipo("Digite o tipo do vinho (Tinto, Branco ou Rose):");
+        let safraTemp = validarSafra("Digite o ano da safra:");
+        let estoqueTemp = validarNumero("Digite a quantidade em estoque:");
+
+        let classeTemp = classificarVinho(safraTemp);
+
+        totalCadastros++;
