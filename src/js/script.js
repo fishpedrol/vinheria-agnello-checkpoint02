@@ -1,4 +1,3 @@
-
 function validarTexto(mensagem) {
     let valor = "";
     while (true) {
@@ -16,7 +15,6 @@ function validarTexto(mensagem) {
     }
 }
 
-// -
 function validarNumero(mensagem) {
     let valor;
     while (true) {
