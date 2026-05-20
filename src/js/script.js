@@ -183,3 +183,25 @@ let nomeTemp = validarTexto("Digite o nome do vinho:");
         }
     }
 
+if (totalCadastros > 0) {
+
+        let cardapio = "🍷 ===== CARDAPIO DE VINHOS ===== 🍷\n";
+
+        if (totalCadastros >= 1) cardapio += formatarVinho(1, nome1, tipo1, safra1, estoque1, classe1);
+        if (totalCadastros >= 2) cardapio += formatarVinho(2, nome2, tipo2, safra2, estoque2, classe2);
+        if (totalCadastros >= 3) cardapio += formatarVinho(3, nome3, tipo3, safra3, estoque3, classe3);
+        if (totalCadastros >= 4) cardapio += formatarVinho(4, nome4, tipo4, safra4, estoque4, classe4);
+        if (totalCadastros >= 5) cardapio += formatarVinho(5, nome5, tipo5, safra5, estoque5, classe5);
+
+        exibirNoConsole("o cardapio de vinhos atualizado", cardapio);
+
+        let resumo = `📊 ===== RESUMO FINAL =====\n\nTotal de cadastros realizados: ${totalCadastros}\nVinhos com estoque baixo (< 5): ${totalEstoqueBaixo}\nVinho com safra mais antiga: ${nomeSafraMaisAntiga} (Safra ${safraMaisAntiga})`;
+
+        exibirNoConsole("o resumo final", resumo);
+
+        alert(`✅ Obrigado por usar o sistema da Vinheria Agnello, ${nome}!`);
+
+    } else {
+        alert("Nenhum vinho foi cadastrado.");
+    }
+}
