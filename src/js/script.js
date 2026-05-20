@@ -106,3 +106,19 @@ function initsys() {
     exibirNoConsole("os detalhes do cadastro", dadosUsuario);
 
     alert("A seguir, adicione os vinhos ao cardapio de vinhos.");
+let nome1 = "", tipo1 = "", safra1 = 0, estoque1 = 0, classe1 = "";
+    let nome2 = "", tipo2 = "", safra2 = 0, estoque2 = 0, classe2 = "";
+    let nome3 = "", tipo3 = "", safra3 = 0, estoque3 = 0, classe3 = "";
+    let nome4 = "", tipo4 = "", safra4 = 0, estoque4 = 0, classe4 = "";
+    let nome5 = "", tipo5 = "", safra5 = 0, estoque5 = 0, classe5 = "";
+
+    let totalCadastros = 0;
+    let totalEstoqueBaixo = 0;
+    let safraMaisAntiga = 0;
+    let nomeSafraMaisAntiga = "";
+    let continuar = true;
+
+    while (continuar) {
+        if (totalCadastros >= 5) {
+            alert("⚠️ Limite de 5 vinhos cadastrados atingido!");
+            break;
