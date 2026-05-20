@@ -85,3 +85,24 @@ function formatarVinho(numero, nomeV, tipoV, safraV, estoqueV, classeV) {
     texto += "\n----------------------------------";
     return texto;
 }
+function initsys() {
+    alert("Bem-vindo a Vinheria Agnello!");
+
+    let nome = validarTexto("Digite seu nome:");
+    alert(`Ola, ${nome}!`);
+
+    let idade = validarNumero("Digite sua idade para o Cadastro:");
+
+    if (idade < 18) {
+        alert("❌ Apenas maiores de 18 anos podem se cadastrar.");
+        return;
+    }
+
+    let mail = validarTexto("Digite seu Email para o Cadastro:");
+    let password = prompt("Digite sua senha para o Cadastro:");
+
+    let dadosUsuario = `👤 ===== CADASTRO DO USUARIO =====\nNome: ${nome}\nIdade: ${idade}\nEmail: ${mail}\nSenha: XXXXXX\n==================================`;
+
+    exibirNoConsole("os detalhes do cadastro", dadosUsuario);
+
+    alert("A seguir, adicione os vinhos ao cardapio de vinhos.");
